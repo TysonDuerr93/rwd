@@ -24,11 +24,25 @@ max-width: 100%;
 width: 300px;
 }
 /* Large Desktop minimum */
-@media (min-width: 1025px) {
-body { background: yellow; }
+@media (max-width: 1025px) {
+html body { background: yellow; }
 }
+
+p{
+line-height: 1.5;
+font-size: 20px;
+font-family:serif;
+color: pink;
+
+}
+
+h1,h3{
+color:pink;
+	
+}
+
 /* Show for Desktop */
-.desktop-video {
+.desktop-video{
 height: 320px;
 max-width: 640px;
 width: 640px;
@@ -43,7 +57,7 @@ text-align: center;
 }
 /* Desktop (Standard) */
 @media (max-width: 1024px) {
-body { background: ;}
+body { background: url("../img/bg.png"); ;}
 /* Show for Desktop */
 .desktop-video {
 height: 320px;
@@ -56,8 +70,8 @@ display: none;
 }
 }
 /* Tablet */
-@media (min-width: 768px ) {
-body { background: green; }
+@media (max-width: 768px ) {
+html body { background: url("../img/bg.png"); }
 }
 /* Hide for Desktop */
 .desktop-video {
@@ -76,16 +90,17 @@ width: 100%;
 }
 }
 /* Mobile (Landscape) */
-@media (min-width: 480px ){
+@media (max-width: 480px ){
 body { background: blue; }
 }
 
 /* Nav Bar */
 .nav{  
 width:100%;
-font-family:sans-serif;
+font-family:serif;
 font-weight:bold;
 text-transform:uppercase;
+font-size: 20px;
 }
 
 .nav ul{
@@ -106,14 +121,29 @@ text-transform:uppercase;
 }
 
 .nav a:hover{
-  background-color:#01B6AD;
+  background-color:black;
 }
 .nav a:active{
-  background-color:#D55121;
+  background-color:black;
 }
 
 
-/* Animations*/
+
+
+
+#home:hover{
+  -o-transform: translateX(500px);
+  -ms-transform: translateX(500px);
+  -moz-transform: translateX(500px);
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+  -o-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -webkit-transition: all 2s;
+}
+
+
+
 
 
 
